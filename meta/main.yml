@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  author: cnstechnicalgroup
+  description: Ansible Role adds an instance as a SQL Server Always-On read only replica to an Always-On Availability Group. 
+  company: CNS Technical Group, Inc.
+  license: GPL2
+  min_ansible_version: 2.3
+  galaxy_tags:
+    - sqlserver
+    - database
+    - high-availability 
+  platforms:
+   - name: EL
+     versions:
+      - 7 
+   - name: Ubuntu
+     versions:
+      - xenial
+dependencies:
+  - { role: cnstechnicalgroup.sqlserver-server, sudo: yes }
