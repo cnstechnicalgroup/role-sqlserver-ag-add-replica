@@ -46,6 +46,12 @@ Author Information
 
 Created by CNS Technical Group (https://www.cnstechgroup.com/)
 
+Documentation
+------------------
+
+Install example (https://github.com/cnstechnicalgroup/ansible-sqlserver/blob/master/documents/sqlserver-ag-add-replica.md)
+
+
 
 Examples
 --------
