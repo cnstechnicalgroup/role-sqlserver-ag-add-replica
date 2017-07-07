@@ -18,3 +18,4 @@ galaxy_info:
       - xenial
 dependencies:
   - { role: cnstechnicalgroup.sqlserver-server, sudo: yes }
+  - { role: cnstechnicalgroup.sqlserver-ha-config, sudo: yes }

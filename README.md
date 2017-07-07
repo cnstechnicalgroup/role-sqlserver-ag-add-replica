@@ -23,8 +23,8 @@ In the current version, you can specify the following variables:
 |-----------------------|---------|---------------------------------------------------------------|
 | sa_password           |   ---   | system administrator password for SQL Server install        . |
 | availability_group    |   ---   | The name that will be assigned to the Availability Group    . |
-| primary_host          |   ---   | The name of the host that is being mirrored (principal)     . |
-| secondary_host        |   ---   | The name of the host that is mirroring (replica)            . |
+| primary_host_name     |   ---   | The name of the host that is being mirrored (principal)     . |
+| secondary_host_name   |   ---   | The name of the host that is mirroring (replica)            . |
 
 
 Dependencies
@@ -33,6 +33,7 @@ Dependencies
 Depends upon 
 
 * [role-sqlserver-server](https://github.com/cnstechnicalgroup/role-sqlserver-server)
+* [role-sqlserver-ha-config](https://github.com/cnstechnicalgroup/role-sqlserver-ha-config)
 
 
 
@@ -65,6 +66,6 @@ Examples
   gather_facts: yes
   environment:
    SA_PASSWORD: "{{sa_password}}"
-
+   ACCEPT_EULA: "Y"
 ```
 
