@@ -2,10 +2,7 @@ Role: cnstechnicalgroup.sqlserver-ag-add-replica
 ========
 
 * Ansible role that adds a replica to a SQL Server Always On Availability Group with ReadOnly Scale. 
-* The role role-sqlserver-ha-config has to be played first on the primary and at least one secondary before adding a replica. 
-* The role role-sqlserver-ag-config has to be played first on the primary and at least one secondary before adding a replica. 
 * This role doesn't create the AG, it simply adds a replica to it. 
-* Even though this role depends upon sqlserver-ha-config and sqlserver-ag-config, it is not possible to add them as a dependency in anisble because this replica is unaware of the first replica. 
 
 Requirements
 ------------
